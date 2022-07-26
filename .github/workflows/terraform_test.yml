@@ -8,6 +8,10 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
+    env:
+	  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_KEY_ID }}
+	  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRETE_ID }}
+	  AWS_DEFAULT_REGION: 'ap-northeast-2'
 
     steps:
     # 저장소로 부터 코드를 내려받기 위한 체크아웃(Checkout) 액션
