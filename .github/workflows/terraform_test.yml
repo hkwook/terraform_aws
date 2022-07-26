@@ -28,4 +28,4 @@ jobs:
       run: terraform plan -input=false
 
     - name: Terraform Deploy
-      run: terraform deploy
+      run: terraform apply
